@@ -6,10 +6,11 @@ const router = express.Router()
 /**
  @summary A SAMPLE ROUTE
  @route   GET /sample/ping/
- @desc    A basic operation of the server: Should reply `ping`.
+ @desc    Test basic operation of the server: Should reply `ping`.
  @access  Public
  @header  null
  @body    null
+ @returns json { message: 'pong!' }
 */
 router.get('/ping', controller.sampleHealthCheck)
 

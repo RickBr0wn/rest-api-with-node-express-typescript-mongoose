@@ -1,0 +1,28 @@
+### To use this file make sure you have installed the VS-Code Extension: REST Client
+### https://github.com/Huachao/vscode-restclient
+
+### @route   GET /api/books/get/books
+### @desc    An endpoint to return all books from the database.
+### @access  Public
+### @header  null 
+### @body    null
+### @returns json {
+###  "books": [<IBOOK>, ...],
+###  "count": x
+### }
+GET http://localhost:1337/api/books/get/books
+content-type: application/json
+
+### @route   POST /api/books/create/book 
+### @desc    Create a new book
+### @access  Public
+### @header  null 
+### @body    null
+### @returns json {}
+POST http://localhost:1337/api/books/create/book HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "First Title",
+  "author": "First Author"
+}

@@ -1,0 +1,22 @@
+### To use this file make sure you have installed the VS-Code Extension: REST Client
+### https://github.com/Huachao/vscode-restclient
+
+### @route   GET /404/
+### @desc    An endpoint to test status code 404.
+### @access  Public
+### @header  null 
+### @body    null
+### @returns null
+GET http://localhost:1337
+content-type: application/json
+
+### @route   GET /sample/ping/
+### @desc    Test basic operation of the server: Should reply `ping`.
+### @access  Public
+### @header  null 
+### @body    null
+### @returns json {
+### 		message: 'pong!'
+###	}
+GET http://localhost:1337/sample/ping
+content-type: application/json
