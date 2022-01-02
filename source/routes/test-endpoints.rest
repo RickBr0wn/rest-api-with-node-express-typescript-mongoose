@@ -1,0 +1,11 @@
+### To use this file make sure you have installed the VS-Code Extension: REST Client
+### https://github.com/Huachao/vscode-restclient
+
+GET http://localhost:1337
+
+###
+
+GET http://localhost:1337/sample/ping
+
+###
+
