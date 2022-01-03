@@ -6,7 +6,6 @@ import mongoose from 'mongoose'
 import config from './config/config'
 import sampleRoutes from './routes/sample'
 import bookRoutes from './routes/book'
-import createBookRoute from './routes/book'
 
 const NAMESPACE = 'SERVER'
 const router = express()
